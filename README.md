@@ -7,7 +7,7 @@ Open for contributions.
 # How to use (Examples)
 
 Call ***MoveMouseWindAsync*** to async move mouse.  
-~~~
+~~~C#
 MouseAPI.MoveMouseWindAsync(new(X,Y));
 ~~~
 ***MoveMouseWind*** and ***MoveMouseWindAsync*** provides some settings via params (setted to default), check the description of the method when calling.  
