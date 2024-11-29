@@ -5,6 +5,9 @@ using System.Runtime.InteropServices;
 
 namespace WindMouse
 {
+    /// <summary>
+    /// MouseAPI class
+    /// </summary>
     public static class MouseAPI
     {
         /// <summary>
@@ -21,7 +24,7 @@ namespace WindMouse
         /// <summary>
         /// Realistic mouse movement using the WindMouse algorithm, provides many calls WinAPI function SetCursorPos
         /// </summary>
-        /// <param name="mouseLocation">Destination coords</param>
+        /// <param name="DestinationLocation">Destination coords</param>
         /// <param name="GravitationalForce">Magnitude of the gravitational force</param>
         /// <param name="WindForce">Magnitude of the wind force fluctuations</param>
         /// <param name="MaximumStepSize">Maximum step size (velocity clip threshold)</param>
@@ -110,7 +113,7 @@ namespace WindMouse
         /// <summary>
         /// Realistic mouse movement using the WindMouse algorithm, provides many calls WinAPI function SetCursorPos
         /// </summary>
-        /// <param name="mouseLocation">Destination coords</param>
+        /// <param name="DestinationLocation">Destination coords</param>
         /// <param name="GravitationalForce">Magnitude of the gravitational force</param>
         /// <param name="WindForce">Magnitude of the wind force fluctuations</param>
         /// <param name="MaximumStepSize">Maximum step size (velocity clip threshold)</param>
@@ -130,7 +133,7 @@ namespace WindMouse
         [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         static extern void GetCursorPos(ref System.Drawing.Point p);
         [Flags]
-        public enum MouseEventFlags
+        enum MouseEventFlags
         {
             LEFTDOWN = 0x00000002,
             LEFTUP = 0x00000004,
