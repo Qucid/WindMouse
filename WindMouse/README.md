@@ -1,4 +1,4 @@
-# WindMouse
+# WindMouse  
 This project is an unofficial implementation of [WindMouse](https://github.com/SRL/SRL-5/blob/master/SRL/core/mouse.simba#L44 "Official Pascal WindMouse") for .NET  
 Also provides WinAPI functions for work with mouse.  
 Project was created based on my needs and does not pretend to be an ideal implementation.  
