@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+	<TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -14,8 +14,12 @@
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-	<VersionPrefix>1.0.1</VersionPrefix>
-	<SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+	<VersionPrefix>1.0.8</VersionPrefix>
+	<Description>This project is an unofficial implementation of WindMouse (realistic mouse movement) for .NET
+Also provide mouse WinAPI functions.</Description>
+	<PackageProjectUrl>https://github.com/Qucid/WindMouse</PackageProjectUrl>
+	<PackageReleaseNotes>Changed description and icon, no new features.</PackageReleaseNotes>
+	<PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -31,6 +35,11 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Include="Q:\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
+
 
 </Project>
