@@ -177,7 +177,7 @@ namespace WindMouse
         /// Send instantly right click (down and up)
         /// </summary>
         /// <param name="p"></param>
-        public static void sendMouseRightClick(System.Drawing.Point p)
+        public static void SendMouseRightClick(System.Drawing.Point p)
         {
             mouse_event((int)MouseEventFlags.RIGHTDOWN | (int)MouseEventFlags.RIGHTUP, p.X, p.Y, 0, 0);
         }
@@ -186,18 +186,18 @@ namespace WindMouse
         /// </summary>
         /// <param name="p"></param>
         /// <param name="delay"></param>
-        public static void sendMouseDoubleClick(System.Drawing.Point p, int delay = 150)
+        public static void SendMouseDoubleClick(System.Drawing.Point p, int delay = 150)
         {
             mouse_event((int)MouseEventFlags.LEFTDOWN | (int)MouseEventFlags.LEFTUP, p.X, p.Y, 0, 0);
             Thread.Sleep(delay);
             mouse_event((int)MouseEventFlags.LEFTDOWN | (int)MouseEventFlags.LEFTUP, p.X, p.Y, 0, 0);
         }
 
-        static void sendMouseDown(System.Drawing.Point p)
+        static void SendMouseDown(System.Drawing.Point p)
         {
             mouse_event((int)MouseEventFlags.LEFTDOWN, p.X, p.Y, 0, 0);
         }
-        static void sendMouseUp(System.Drawing.Point p)
+        static void SendMouseUp(System.Drawing.Point p)
         {
             mouse_event((int)MouseEventFlags.LEFTUP, p.X, p.Y, 0, 0);
         }
@@ -216,9 +216,9 @@ namespace WindMouse
         /// <param name="delay">Time betweent down and up button</param>
         public static void sendMouseLeftClick(System.Drawing.Point p, int delay = 25)
         {
-            sendMouseDown(new(50, 50));
+            SendMouseDown(new(50, 50));
             Thread.Sleep(delay);
-            sendMouseUp(new(50, 50));
+            SendMouseUp(new(50, 50));
         }
     }
 }

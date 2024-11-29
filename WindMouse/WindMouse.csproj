@@ -9,6 +9,10 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Wind Mouse</Title>
     <Authors>Qucid</Authors>
+    <RepositoryUrl>https://github.com/Qucid/WindMouse</RepositoryUrl>
+    <PackageTags>WindMouse;Mouse API;Realistic Mouse; Mouse Wrapper; Mouse WinAPI</PackageTags>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
