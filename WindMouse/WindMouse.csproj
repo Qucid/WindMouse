@@ -14,11 +14,11 @@
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-	<VersionPrefix>1.0.8</VersionPrefix>
+	<VersionPrefix>1.0.9</VersionPrefix>
 	<Description>This project is an unofficial implementation of WindMouse (realistic mouse movement) for .NET
 Also provide mouse WinAPI functions.</Description>
 	<PackageProjectUrl>https://github.com/Qucid/WindMouse</PackageProjectUrl>
-	<PackageReleaseNotes>Changed description and icon, no new features.</PackageReleaseNotes>
+	<PackageReleaseNotes>sendMouseLeftClick => SendMouseLeftClick</PackageReleaseNotes>
 	<PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 

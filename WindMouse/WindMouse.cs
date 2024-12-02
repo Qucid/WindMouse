@@ -217,7 +217,7 @@ namespace WindMouse
         /// </summary>
         /// <param name="p"></param>
         /// <param name="delay">Time betweent down and up button</param>
-        public static void sendMouseLeftClick(System.Drawing.Point p, int delay = 25)
+        public static void SendMouseLeftClick(System.Drawing.Point p, int delay = 25)
         {
             SendMouseDown(new(50, 50));
             Thread.Sleep(delay);
